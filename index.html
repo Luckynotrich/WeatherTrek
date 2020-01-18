@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html>*
 <html>
 <title>WeatherTrek</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Asap|Libre+Baskerville|Patua+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="WTstyle.css">
-
+<link href="https://fonts.googleapis.com/css?family=Asap|Libre+Baskerville|Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="wtstyle.css">
 
 <style>
 body,h1,h2,h3,h4,h5 {font-family: 'Libre Baskerville', serif;}
@@ -21,29 +20,31 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32">
   <h1><b>Weather Trek</b></h1>
-  <p>Weather News for Fellow Travelers</p>
+  <p><h5>Weather News for Fellow Travelers</h5></p>
 </header>
 
 <div id="wtTopnav" class="topnav">
-  <a class="active" href="javascript:void(0)">Contact</a>
-  <a href="javascript:void(0)">Hurricane</a>
-  <a href="javascript:void(0)">Tornado</a>
-  <a href="javascript:void(0)">Fire</a>
-  <a href="javascript:void(0)">Flooding</a>
-  <a href="javascript:void(0)">Deglaciation</a>
-  <a href="javascript:void(0)">Analysis</a>
-  <a class="active" href="javascript:void(0)">Home</a>
+  <a id="Ican" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBarResponse()">&#9776;</a>
+  <a id="Home" class="active" href="javascript:void(0)">Home</a>
+  <a id="Analysis" href="javascript:void(0)">Analysis</a>
+ <a id="Glaciers" href="javascript:void(0)">Glaciers</a>
+ <a id="Flooding" href="javascript:void(0)">Flooding</a>
+ <a id="Fire" href="javascript:void(0)">Fire</a>
+ <a id="Tornado" href="javascript:void(0)">Tornado</a>
+ <a id="Hurricane" href="javascript:void(0)">Hurricane</a>
+ <a class="active" id="contact" type="text/html" target="_blank" href="test.html">Contact</a>
+</div>
   <div class="dropdown">
-    <button class="dropbtn">Dropdown
-      <i class="fa fa-caret-down"></i>
+    <button class="dropbtn" onclick="navBarResponse()">Dropdown
+      <i class="fa fa-bars"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
+      <!-- <a href="#">Link 1</a>
       <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+       <a href="#">Link 3</a> -->
     </div>
   </div>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBarResponse()">&#9776;</a>
+
 </div>
 <div class="content">
 <!-- Grid -->
@@ -53,18 +54,22 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-2 w3-white">
-    <a href="https://www.thenation.com/article/climate-disaster-is-upon-us/" target="_blank" ><img src="https://www.thenation.com/wp-content/uploads/2019/01/margerie-glacier-alaska-cc-img.jpg?scale=896&compress=80" alt="Nature" style="width:100%"></a>
+    <a href="https://www.theguardian.com/world/2019/nov/11/cyclone-bulbul-deaths-millions-displaced-india-bangladesh" target="_blank" ><img src="https://i.guim.co.uk/img/media/0a2ff95628b917068c3629fbd0d11cbc811353ed/0_181_3500_2101/master/3500.jpg?width=965&quality=85&auto=format&fit=max&s=ac0a40efc878a93b54e2b93a1d300a69" alt="Nature" style="width:100%"></a>
     <div class="w3-container">
-      <h3 style="font-family: 'Patua One', cursive;"><b>Climate Disaster Is Upon Us</b></h3>
-      <h5 style="font-family: 'Asap', sans-serif;">The question is no longer whether or not we are going to fail, but how are we going to comport ourselves in the era of failure?
-By Dahr Jamail <span class="w3-opacity">January 15, 2019</span></h5>
+      <h5 class="subhead"><b>HURRICANE / 11.10.19 / INDIA & BANGLADESH</b></h5>
+      <a href="https://www.theguardian.com/world/2019/nov/11/cyclone-bulbul-deaths-millions-displaced-india-bangladesh" target="_blank"><div class="subcap"> 20 dead and millions displaced as storm hits India and Bangladesh</a><br>
+Agence France-Presse</div></br>
     </div>
 
     <div class="w3-container">
       <p></p>
       <div class="w3-row">
-        <div class="w3-col m8 s12">
-         <a href="https://www.google.com/search?q=climate+disaster&ie=utf-8&oe=utf-8&client=firefox-b-1-e" target="_blank">Read more about Climate Disaster</a>
+        <div class="subcap">
+         <a href="https://www.aljazeera.com/news/2019/11/deadly-cyclone-bulbul-weakens-depression-bangladesh-191110055831520.html" target="_blank">Deadly Cyclone Bulbul weakens over Bangladesh </a>&nbsp;&nbsp;&nbsp;Aljazeera
+        </div>
+        <br>
+        <div class="subcap">
+         <a href="https://www.cnn.com/2019/11/11/asia/cyclone-bulbul-india-bangladesh-intl-hnk/index.html" target="_blank">Over 2 million people evacuated as deadly cyclone slams into Bangladesh and India </a>&nbsp;&nbsp;&nbsp;CNN
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
@@ -162,6 +167,8 @@ By Dahr Jamail <span class="w3-opacity">January 15, 2019</span></h5>
 
 <!-- END w3-content -->
 </div>
+
+<!-- <object name="testbar" type="text/html" data="testbar.html"/></object> -->
 </div>
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
@@ -169,7 +176,8 @@ By Dahr Jamail <span class="w3-opacity">January 15, 2019</span></h5>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
-<script src="WTscripts.js"></script>
-<script src="WTscripts2.js"></script>
+<script src="wtscript1.js"></script>
+<script src="wtscript2.js"></script>
+<script src="testbar.js"></script>
 </body>
 </html>
